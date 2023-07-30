@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Dervish - Neo Project 1</title>
+    <link rel="shortcut icon" href="assets/Neo(612 × 612 px).svg" type="image/x-icon">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <header class="fixed top-0 w-full z-50">
+        <!-- Main navigation container -->
+        <nav class="navbar rounded-b-xl bg-[#42505db5] flex w-full flex-nowrap items-center justify-between py-2 text-neutral-500 shadow-lg hover:text-neutral-500 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+            data-te-navbar-ref>
+            <div class="flex items-center px-10" style="border-radius: 50%;">
+                <a href="./index.html" class="flex items-center" style="border-radius: 50%;">
+                    <img src="assets/Neo(612 × 612 px).svg" alt="Logo" class="h-12 w-h-12">
+                </a>
+                <!-- Hamburger button for mobile view -->
+                <button
+                    class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+                    type="button" data-te-collapse-init data-te-target="#navbarSupportedContent8"
+                    aria-controls="navbarSupportedContent8" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Hamburger icon -->
+                    <span class="[&>svg]:w-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+                            <path fill-rule="evenodd"
+                                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Collapsible navbar container -->
+            <div class="!visible mt-2 hidden flex-grow basis-[100%] items-center justify-center lg:mt-0 lg:!flex lg:basis-auto"
+                id="navbarSupportedContent8" data-te-collapse-item>
+                <!-- Left links -->
+                <ul class="navbar list-style-none flex flex-col pl-0 lg:mt-1 lg:flex-row" data-te-navbar-nav-ref>
+                    <!-- Link -->
+                    <li data-te-ripple-init data-te-ripple-color="light" class="mb-4 pl-4 mx-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                        data-te-nav-item-ref>
+                        <a id="a"
+                            class="p-0  font-medium text-neutral-200 transition duration-200 hover:text-neutral-500 hover:ease-in-out  disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="./index.html" data-te-nav-link-ref>Home</a>
+                    </li>
+                    <li data-te-ripple-init data-te-ripple-color="light" class="mb-4 pl-4 mx-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                        data-te-nav-item-ref>
+                        <a id="a"
+                            class="p-0  font-medium text-neutral-200 transition duration-200 hover:text-neutral-500 hover:ease-in-out  disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#Gallery" data-te-nav-link-ref>Gallery</a>
+                    </li>
+                    <li data-te-ripple-init data-te-ripple-color="light" class="mb-4 pl-4 mx-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                        data-te-nav-item-ref>
+                        <a id="a"
+                            class="p-0  font-medium text-neutral-200 transition duration-200 hover:text-neutral-500 hover:ease-in-out  disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>Reviews</a>
+                    </li>
+                    <li data-te-ripple-init data-te-ripple-color="light" class="mb-4 pl-4 mx-2 lg:mb-0 lg:pl-0 lg:pr-1"
+                        data-te-nav-item-ref>
+                        <a id="a"
+                            class="p-0  font-medium text-neutral-200 transition duration-200 hover:text-neutral-500 hover:ease-in-out  disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                            href="#" data-te-nav-link-ref>Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="px-2">
+                <!-- Required font awesome -->
+                <button type="button"
+                    class="inline-block rounded-full px-4 py-2 leading-normal text-white shadow-sm transition duration-300 ease-in-out hover:bg-white hover:shadow-md focus:shadow-md focus:outline-none focus:ring-0 active:bg-teal-200 active:shadow-md dark:shadow-md dark:hover:shadow-md dark:focus:shadow-md dark:active:shadow-md relative">
+                    <i class="fa-sharp fa-solid fa-cart-shopping fa-sm" style="color: #b5b5b5;"></i>
+                    <span
+                        class="absolute -top-2 -right-2 text-xs bg-slate-400 rounded-full text-white px-2 py-1">0</span>
+                </button>
+            </div>
+            <div class="px-7">
+                <!-- Required font awesome -->
+                <a href="./profile.html" type="button" data-te-ripple-init data-te-ripple-color="cyan"
+                    class="inline-block rounded-full px-4 py-2 leading-normal text-white shadow-sm transition duration-300 ease-in-out hover:bg-white hover:shadow-md focus:shadow-md focus:outline-none focus:ring-0 active:bg-teal-50 active:shadow-md dark:shadow-md dark:hover:shadow-md dark:focus:shadow-md dark:active:shadow-md relative">
+                    <i class="fa-regular fa-user fa-sm" style="color: #b5b5b5;"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="flex flex-col justify-center items-center w-full h-screen">
+        <div class="flex flex-wrap justify-center items-start px-5 py-5 md:w-10/12 lg:w-9/12 xl:w-8/12">
+            <div class="relative w-full md:w-1/2">
+                <img src="./assets/detailPro.png" alt="" class="rounded-md w-full">
+            </div>
+            <div class="flex flex-col justify-start w-full md:w-1/2 md:pl-10">
+                <h6 class="text-4xl leading-tight font-mono">
+                    Neo Project 1
+                    <div class="text-xl font-normal">The Whirling Symphony</div>
+                </h6>
+                <div class="mt-2">
+                    <ul class="flex justify-start">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-1 h-5 w-5 text-cyan-400">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-1 h-5 w-5 text-cyan-400">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-1 h-5 w-5 text-cyan-400">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-1 h-5 w-5 text-cyan-400">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="mr-1 h-5 w-5 text-cyan-400">
+                                <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </li>
+                        <!-- Other stars here -->
+                    </ul>
+                </div>
+                <div class="mt-4 text-xl font-normal">Rp 120.000</div>
+                <div class="mt-5 text-xl font-mono font-normal">SIZE :</div>
+                <div class="mt-2">
+                    <div class="relative inline-flex w-fit">
+                        <div
+                            class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-600 px-1.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+                            99+
+                        </div>
+                        <button type="button"
+                            class="inline-block rounded border-2 focus:bg-neutral-800 border-slate-950 p-3 px-4 mr-2 text-sm font-body font-semibold text-slate-950 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-950 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 focus:bg-dark focus:text-white"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            S
+                        </button>
+                    </div>
+                    <div class="relative inline-flex w-fit">
+                        <div
+                            class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-600 px-1.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+                            99+
+                        </div>
+                        <button type="button"
+                            class="inline-block rounded border-2 focus:bg-neutral-800 border-slate-950 p-3 px-4 mr-2 text-sm font-body font-semibold text-slate-950 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-950 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 focus:bg-dark focus:text-white"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            M
+                        </button>
+                    </div>
+                    <div class="relative inline-flex w-fit">
+                        <div
+                            class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-600 px-1.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+                            99+
+                        </div>
+                        <button type="button"
+                            class="inline-block rounded border-2 focus:bg-neutral-800 border-slate-950 p-3 px-4 mr-2 text-sm font-body font-semibold text-slate-950 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-950 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 focus:bg-dark focus:text-white"
+                            data-te-ripple-init data-te-ripple-color="light">
+                            L
+                        </button>
+                    </div>
+                    <div class="relative inline-flex w-fit">
+                        <div
+                            class="absolute bottom-auto left-auto right-0 top-0 z-10 inline-block -translate-y-1/2 translate-x-2/4 rotate-0 skew-x-0 skew-y-0 scale-x-100 scale-y-100 whitespace-nowrap rounded-full bg-neutral-600 px-1.5 py-1 text-center align-baseline text-xs font-bold leading-none text-white">
+                            99+
+                        </div>
+                        <button type="button"
+                            class="inline-block rounded border-2 focus:bg-neutral-800 border-slate-950 p-3 px-3 mr-2 text-sm font-body font-semibold text-slate-950 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-950 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 focus:bg-dark focus:text-white"
+                            disabled>
+                            XL
+                        </button>
+                    </div>
+
+                </div>
+                <div class="mt-5 text-lg font-mono font-normal">Jumlah :</div>
+                <div class="mt-2 flex justify-start">
+                    <button id="minusBtn"
+                        class="middle none center flex items-center justify-center rounded-full p-2 text-base font-extrabold uppercase text-neutral-900 transition-all hover:bg-neutral-500 active:bg-neutral-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none disabled:hover:bg-transparent"
+                        data-te-ripple-init data-te-ripple-color="light">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <span id="counter" class="mx-10 mt-1">1</span>
+                    <button id="plusBtn"
+                        class="middle none center flex items-center justify-center rounded-full p-2 text-base font-extrabold uppercase text-neutral-900 transition-all hover:bg-neutral-500 active:bg-neutral-500 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        data-te-ripple-init data-te-ripple-color="light">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="mt-8">
+                    <p class="text-justify">
+                        Kami ingin memberitahukan bahwa warna dan ukuran produk pada gambar mungkin sedikit berbeda dari
+                        aslinya. <br> Jangan khawatir, kami siap membantu Anda dalam proses penukaran barang apabila
+                        ada
+                        perbedaan
+                        yang signifikan dan tidak dapat diterima. <br>Layanan pelanggan kami siap membantu Anda dengan
+                        senang
+                        hati!
+                    </p>
+                </div>
+                <div class="mt-4 border border-slate-800 rounded-lg">
+                    <div class="p-3">
+                        <p>Pengiriman</p> <br>
+                        <div class="flex items-center justify-between">
+                            <p class="flex-grow">Kirim Ke :</p>
+                            <div class="space-y-1">
+                                <!--Button trigger vertically centered scrollable modal-->
+                                <button type="button"
+                                    class="inline-block rounded bg-transparent px-1 pb-1 pt-1 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-slate-400 focus:outline-none focus:ring-0 dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                    data-te-toggle="modal" data-te-target="#exampleModalCenteredScrollable"
+                                    data-te-ripple-init data-te-ripple-color="light">
+                                    Masukan Alamat <i class="fa-regular fa-circle-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--Verically centered scrollable modal-->
+                        <div data-te-modal-init
+                            class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                            id="exampleModalCenteredScrollable" tabindex="-1"
+                            aria-labelledby="exampleModalCenteredScrollable" aria-modal="true" role="dialog">
+                            <div data-te-modal-dialog-ref
+                                class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+                                <div
+                                    class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                                    <div
+                                        class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                                        <!--Modal title-->
+                                        <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                            id="exampleModalCenteredScrollableLabel">
+                                            Modal title
+                                        </h5>
+                                        <!--Close button-->
+                                        <button type="button"
+                                            class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                            data-te-modal-dismiss aria-label="Close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <!--Modal body-->
+                                    <div class="relative p-4">
+                                        <p>
+                                            This is some placeholder content to show a vertically centered
+                                            modal. We've added some extra copy here to show how vertically
+                                            centering the modal works when combined with scrollable modals.
+                                            We also use some repeated line breaks to quickly extend the
+                                            height of the content, thereby triggering the scrolling. When
+                                            content becomes longer than the predefined max-height of modal,
+                                            content will be cropped and scrollable within the modal.
+                                        </p>
+                                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                                        <p>Just like that.</p>
+                                    </div>
+
+                                    <!--Modal footer-->
+                                    <div
+                                        class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                                        <button type="button"
+                                            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                            data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+                                            Close
+                                        </button>
+                                        <button type="button"
+                                            class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                                            data-te-ripple-init data-te-ripple-color="light">
+                                            Save changes
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-4Ua7M8I0Db/pXTFtw4d79LWTF2vQ9K4ZCly8/lBDaZ++ATs4VxNG1C/e0Dmlw1mH8SOGkK/O0HlZUqOOtIfMDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <script>
+        // JavaScript
+        const counterElement = document.getElementById('counter');
+        const minusButton = document.getElementById('minusBtn');
+        const plusButton = document.getElementById('plusBtn');
+
+        let counterValue = 1;
+
+        // Function to update the counter value and display
+        function updateCounter() {
+            counterElement.innerText = counterValue.toString();
+
+            // Disable minus button when counter is 1
+            if (counterValue === 1) {
+                minusButton.disabled = true;
+                minusButton.classList.add('disabled');
+            } else {
+                minusButton.disabled = false;
+                minusButton.classList.remove('disabled');
+            }
+        }
+
+        // Event listener for the minus button
+        minusButton.addEventListener('click', () => {
+            if (counterValue > 1) {
+                counterValue--;
+                updateCounter();
+            }
+        });
+
+        // Event listener for the plus button
+        plusButton.addEventListener('click', () => {
+            counterValue++;
+            updateCounter();
+        });
+
+        // Initial update
+        updateCounter();
+
+    </script>
+</body>
+
+</html>
